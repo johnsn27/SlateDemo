@@ -1,0 +1,73 @@
+@import '../../../../scss/gel.scss';
+@import '../../../../scss/variables.scss';
+
+
+.sidebar {
+  width: 330px;
+  overflow: scroll;
+  min-height: 100vh;
+  background-color: $grey-ultra-light;
+
+  &__open-btn.igm-btn {
+    position: fixed;
+    right: 8%;
+    bottom: 100px;
+    z-index: 10;
+    height: 33px;
+    width: 33px;
+    min-width: 33px;
+    background-color: $white;
+
+    &:focus,
+    &:hover,
+    &:active {
+      background-color: $grey;
+
+      .gel-icon svg {
+        fill: $white;
+      }
+    }
+  }
+
+  &__close.igm-btn {
+    float: right;
+    margin-top: 9px;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    min-width: unset;
+
+    .sidebar__close-icon {
+      color: $tundora-grey;
+      width: 16px;
+      height: 16px;
+    }
+
+    &:focus,
+    &:hover,
+    &:active {
+      background-color: transparent;
+
+      .sidebar__close-icon {
+        color: $grey-black;
+      }
+    }
+  }
+
+  &__context-bar {
+    height: 56px;
+    background-color: $white;
+    border-bottom: #d6d6d6 solid 1px;
+    border-top: #d6d6d6 solid 1px;
+  }
+}
+
+@media screen and (max-width: $desktop) {
+  .sidebar {
+      display: none !important;
+  }
+
+  .igm-btn.sidebar__open-btn {
+    display: none;
+  }
+}

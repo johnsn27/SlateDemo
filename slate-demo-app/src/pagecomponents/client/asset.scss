@@ -1,0 +1,9 @@
+@import '../../scss/gel.scss';
+@import '../../scss/variables.scss';
+
+.editor-container {
+  display: flex;
+  background: #ccc;
+  width: 100%;
+  justify-content: space-between;
+}

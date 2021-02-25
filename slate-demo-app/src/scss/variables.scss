@@ -1,0 +1,54 @@
+@import './gel';
+
+$black: #000;
+$white: #fff;
+
+// Greys
+$alto-grey: #dcdcdc;
+$gallery-grey: #ededed;
+$silver-grey: #ccc;
+$silver: #c3c3c3;
+$grey: #999;
+$boulder-grey: #767676;
+$tundora-grey: #404040;
+$grey-black: #0e0e0e;
+$grey-ultra-light: #eeeeee;
+
+// Greens
+$japanese-laurel-green: #0b8a0d;
+$la-palma-green: #16891b;
+
+// Reds
+$failure-red: #c80000;
+$notification-warning-red: #d0021b;
+$crimson-red: #e3124e;
+
+// Oranges
+$optimo-dark-orange: #ca3204;
+// Don't use me for text I have low contrast
+$optimo-orange: #fb531f;
+
+// Blues
+$navy-blue: #006def;
+
+// Sizes
+$header-height: 146px;
+
+// Breakpoints
+$content-bar-height: 56px;
+$content-bar-height-mobile: 44px;
+$context-button-min-size: 44px;
+$mobile:  320px;
+$tablet:  768px;
+$desktop: 980px;
+$wide:    1300px;
+$breakpoint: 600px;
+$medium: 569px;
+
+// max widths in ems so they match media query units
+$max-width-1008: 63em;
+$max-width-1280: 80em;
+
+// these variables must be after gel-grid import to override the gel-grid values
+$gel-grid-max-width-1008: $max-width-1008;
+$gel-grid-max-width-1280: $max-width-1280;
