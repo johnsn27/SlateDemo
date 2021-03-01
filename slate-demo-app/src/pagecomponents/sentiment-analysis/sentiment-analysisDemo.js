@@ -7,12 +7,12 @@ class ShortcutSidebarView extends Component {
 			isLoading: true,
 			dataSource: {}
 		};
+		
 	}
 	async componentDidMount() {
 		try {
-			const response = await fetch('https://jc753cwotb.execute-api.eu-west-1.amazonaws.com/dev/sentiment?text=');
+			const response = await fetch('https://jc753cwotb.execute-api.eu-west-1.amazonaws.com/dev/sentiment?text=' + this.props.text);
 			let responseJson = await response.json();
-      console.log(responseJson)
 			this.setState(
 				{
 					isLoading: false,
@@ -27,7 +27,6 @@ class ShortcutSidebarView extends Component {
 
 	render() {
 		let { dataSource } = this.state;
-    console.log(dataSource.sentiment)
 		if (this.state.isLoading) {
 			return <div>Loading...</div>;
 		} else {

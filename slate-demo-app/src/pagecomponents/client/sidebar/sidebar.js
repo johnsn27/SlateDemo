@@ -24,7 +24,7 @@ function Sidebar(props) {
         <GELIcon customSvg={noIcon} className="sidebar__close-icon"/>
       </Btn>
       <div className="sidebar__content">{children}</div>
-      <SentimentAnalysis />
+      <SentimentAnalysis text="hello world"/>
     </div>
   );
 }
